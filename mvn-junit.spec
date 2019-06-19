@@ -4,7 +4,7 @@
 #
 Name     : mvn-junit
 Version  : 3.8.1
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source0  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source1  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
@@ -34,26 +34,26 @@ data components for the mvn-junit package.
 %build
 
 %install
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.1
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.2
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/junit/t/3.8.2
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/4.11
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/junit/t/4.11
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/4.11
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/junit/t/4.11
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/4.12
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/junit/t/4.12
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/t/4.12
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/junit/t/4.12
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
 
 
 %files
@@ -61,10 +61,10 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/junit/t/4.12
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/junit/t/3.8.1/junit-3.8.1.jar
-/usr/share/java/.m2/repository/junit/t/3.8.1/junit-3.8.1.pom
-/usr/share/java/.m2/repository/junit/t/3.8.2/junit-3.8.2.pom
-/usr/share/java/.m2/repository/junit/t/4.11/junit-4.11.jar
-/usr/share/java/.m2/repository/junit/t/4.11/junit-4.11.pom
-/usr/share/java/.m2/repository/junit/t/4.12/junit-4.12.jar
-/usr/share/java/.m2/repository/junit/t/4.12/junit-4.12.pom
+/usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+/usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.pom
+/usr/share/java/.m2/repository/junit/junit/3.8.2/junit-3.8.2.pom
+/usr/share/java/.m2/repository/junit/junit/4.11/junit-4.11.jar
+/usr/share/java/.m2/repository/junit/junit/4.11/junit-4.11.pom
+/usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.jar
+/usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.pom
