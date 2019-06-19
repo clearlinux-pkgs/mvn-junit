@@ -4,7 +4,7 @@
 #
 Name     : mvn-junit
 Version  : 3.8.1
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source0  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source1  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
