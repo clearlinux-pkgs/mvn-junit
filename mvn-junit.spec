@@ -4,17 +4,18 @@
 #
 Name     : mvn-junit
 Version  : 3.8.1
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source0  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source1  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
-Source2  : https://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
-Source3  : https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
-Source4  : https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom
-Source5  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar
-Source6  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom
-Source7  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
-Source8  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
+Source2  : https://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar
+Source3  : https://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+Source4  : https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar
+Source5  : https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom
+Source6  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar
+Source7  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom
+Source8  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
+Source9  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CPL-1.0
@@ -37,31 +38,34 @@ data components for the mvn-junit package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/junit/junit/3.8.2/junit-3.8.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10/junit-4.10.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.10/junit-4.10.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11/junit-4.11.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.11/junit-4.11.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.pom
 
 
 %files
@@ -71,6 +75,7 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
 /usr/share/java/.m2/repository/junit/junit/3.8.1/junit-3.8.1.pom
+/usr/share/java/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
 /usr/share/java/.m2/repository/junit/junit/3.8.2/junit-3.8.2.pom
 /usr/share/java/.m2/repository/junit/junit/4.10/junit-4.10.jar
 /usr/share/java/.m2/repository/junit/junit/4.10/junit-4.10.pom
