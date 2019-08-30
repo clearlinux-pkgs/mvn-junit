@@ -4,7 +4,7 @@
 #
 Name     : mvn-junit
 Version  : 3.8.1
-Release  : 8
+Release  : 9
 URL      : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source0  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source1  : https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom
@@ -24,6 +24,7 @@ Source14  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
 Source15  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
 Source16  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar
 Source17  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom
+Source18  : https://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CPL-1.0
@@ -100,6 +101,9 @@ cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/juni
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1
 cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2/junit-4.8.2.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -123,3 +127,4 @@ cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/juni
 /usr/share/java/.m2/repository/junit/junit/4.6/junit-4.6.pom
 /usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar
 /usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.pom
+/usr/share/java/.m2/repository/junit/junit/4.8.2/junit-4.8.2.pom
