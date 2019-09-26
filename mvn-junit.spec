@@ -4,7 +4,7 @@
 #
 Name     : mvn-junit
 Version  : 3.8.1
-Release  : 10
+Release  : 11
 URL      : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source0  : https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
 Source1  : https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom
@@ -22,9 +22,11 @@ Source12  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar
 Source13  : https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom
 Source14  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
 Source15  : https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
-Source16  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar
-Source17  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom
-Source18  : https://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
+Source16  : https://repo1.maven.org/maven2/junit/junit/4.13-beta-2/junit-4.13-beta-2.jar
+Source17  : https://repo1.maven.org/maven2/junit/junit/4.13-beta-2/junit-4.13-beta-2.pom
+Source18  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar
+Source19  : https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom
+Source20  : https://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CPL-1.0
@@ -95,14 +97,20 @@ cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12/junit
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12
 cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.13-beta-2
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.13-beta-2/junit-4.13-beta-2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.13-beta-2
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.13-beta-2/junit-4.13-beta-2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.pom
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.1/junit-4.8.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2/junit-4.8.2.pom
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2/junit-4.8.2.pom
 
 
 %files
@@ -120,6 +128,8 @@ cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/junit/junit/4.8.2/juni
 /usr/share/java/.m2/repository/junit/junit/4.11/junit-4.11.pom
 /usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.jar
 /usr/share/java/.m2/repository/junit/junit/4.12/junit-4.12.pom
+/usr/share/java/.m2/repository/junit/junit/4.13-beta-2/junit-4.13-beta-2.jar
+/usr/share/java/.m2/repository/junit/junit/4.13-beta-2/junit-4.13-beta-2.pom
 /usr/share/java/.m2/repository/junit/junit/4.4/junit-4.4.jar
 /usr/share/java/.m2/repository/junit/junit/4.4/junit-4.4.pom
 /usr/share/java/.m2/repository/junit/junit/4.6/junit-4.6-sources.jar

@@ -4,3 +4,5 @@ apache-maven
 apache-spark
 apache-zookeeper
 cassandra
+gradle
+rabbitmq-java-client
